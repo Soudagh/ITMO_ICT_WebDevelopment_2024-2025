@@ -453,22 +453,13 @@
   
 </li>
         
-          <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
-    <span class="md-ellipsis">
-      Технологии
-    </span>
-  </a>
-  
-</li>
-        
       </ul>
     </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
+  <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
       Запуск
     </span>
@@ -478,7 +469,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
+  <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
       Первый запуск
     </span>
@@ -487,7 +478,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#_5" class="md-nav__link">
+  <a href="#_4" class="md-nav__link">
     <span class="md-ellipsis">
       Дальнейшие запуски
     </span>
@@ -559,22 +550,13 @@
   
 </li>
         
-          <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
-    <span class="md-ellipsis">
-      Технологии
-    </span>
-  </a>
-  
-</li>
-        
       </ul>
     </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
+  <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
       Запуск
     </span>
@@ -584,7 +566,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
+  <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
       Первый запуск
     </span>
@@ -593,7 +575,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#_5" class="md-nav__link">
+  <a href="#_4" class="md-nav__link">
     <span class="md-ellipsis">
       Дальнейшие запуски
     </span>
@@ -646,21 +628,13 @@
 <li>В клиентской части должна формироваться таблица, отображающая
   постояльцев отеля за последний месяц.</li>
 </ul>
-<h3 id="_2">Технологии</h3>
-<ul>
-<li><strong>Backend:</strong> Django 5.1.2</li>
-<li><strong>Database:</strong> PostgreSQL</li>
-<li><strong>Containerization:</strong> Docker</li>
-<li><strong>Frontend:</strong> Bootstrap 5 (для стилизации)</li>
-<li><strong>Документация:</strong> MkDocs</li>
-</ul>
-<h1 id="_3">Запуск</h1>
-<h2 id="_4">Первый запуск</h2>
+<h1 id="_2">Запуск</h1>
+<h2 id="_3">Первый запуск</h2>
 <pre><code class="language-zsh">pip install -r requirements.txt
 docker run --name pg-container -e POSTGRES_PASSWORD=notsecred -d -p 5432:5432 postgres
 python manage.py runserver localhost:8000
 </code></pre>
-<h2 id="_5">Дальнейшие запуски</h2>
+<h2 id="_4">Дальнейшие запуски</h2>
 <pre><code class="language-zsh">docker start postgres-container
 python manage.py runserver localhost:8000
 </code></pre>
