@@ -751,129 +751,81 @@
 <h2 id="_1">Описание эндпоинтов</h2>
 <h3 id="hotel">Hotel</h3>
 <h4 id="clients">Clients</h4>
-<ol>
-<li><strong>Получить список клиентов</strong></li>
-</ol>
+<p>1 <strong>Получить список клиентов</strong></p>
 <pre><code>GET /hotel/clients
 </code></pre>
-<ol>
-<li><strong>Добавить клиента</strong></li>
-</ol>
+<p>2 <strong>Добавить клиента</strong></p>
 <pre><code>POST /hotel/clients
 </code></pre>
-<ol>
-<li><strong>Получить количество клиентов, прибывших из заданного города</strong></li>
-</ol>
+<p>3 <strong>Получить количество клиентов, прибывших из заданного города</strong></p>
 <pre><code>GET /hotel/clients/city
 </code></pre>
 <h4 id="employeesschedule">EmployeesSchedule</h4>
-<ol>
-<li><strong>Получить список расписаний работников</strong></li>
-</ol>
+<p>4 <strong>Получить список расписаний работников</strong></p>
 <pre><code>GET /hotel/employees/schedule
 </code></pre>
-<ol>
-<li><strong>Добавить список расписаний работников</strong></li>
-</ol>
+<p>5 <strong>Добавить список расписаний работников</strong></p>
 <pre><code>POST /hotel/employees/schedule
 </code></pre>
-<ol>
-<li><strong>Изменить расписание сотрудника</strong></li>
-</ol>
+<p>6 <strong>Изменить расписание сотрудника</strong></p>
 <pre><code>PUT /hotel/employees/schedule/{employee_id}/update
 </code></pre>
-<ol>
-<li><strong>Изменить расписание сотрудника</strong></li>
-</ol>
+<p>7 <strong>Изменить расписание сотрудника</strong></p>
 <pre><code>PATCH /hotel/employees/schedule/{employee_id}/update
 </code></pre>
-<ol>
-<li><strong>Получить сотрудника, который убирал номер определённого клиента в определённый день недели</strong></li>
-</ol>
+<p>8 <strong>Получить сотрудника, который убирал номер определённого клиента в определённый день недели</strong></p>
 <pre><code>PUT /hotel/employees/schedule_client
 </code></pre>
 <h4 id="employees">Employees</h4>
-<ol>
-<li><strong>Получить список сотрудников</strong></li>
-</ol>
+<p>9 <strong>Получить список сотрудников</strong></p>
 <pre><code>GET /hotel/employees
 </code></pre>
-<ol>
-<li><strong>Добавить сотрудников</strong></li>
-</ol>
+<p>10 <strong>Добавить сотрудников</strong></p>
 <pre><code>POST /hotel/employees
 </code></pre>
-<ol>
-<li><strong>Получить подробную информацию о сотруднике</strong></li>
-</ol>
+<p>11 <strong>Получить подробную информацию о сотруднике</strong></p>
 <pre><code>GET /hotel/employees/{id}
 </code></pre>
-<ol>
-<li><strong>Удалить сотрудника</strong></li>
-</ol>
+<p>12 <strong>Удалить сотрудника</strong></p>
 <pre><code>DELETE /hotel/employees/{id}
 </code></pre>
 <h4 id="reservations">Reservations</h4>
-<ol>
-<li><strong>Получить список резервирований</strong></li>
-</ol>
+<p>13 <strong>Получить список резервирований</strong></p>
 <pre><code>GET /hotel/reservations
 </code></pre>
-<ol>
-<li><strong>Добавить резервирование</strong></li>
-</ol>
+<p>14 <strong>Добавить резервирование</strong></p>
 <pre><code>POST /hotel/reservations
 </code></pre>
-<ol>
-<li><strong>Получить подробную информацию о резервировании</strong></li>
-</ol>
+<p>15 <strong>Получить подробную информацию о резервировании</strong></p>
 <pre><code>GET /hotel/reservations/{id}
 </code></pre>
-<ol>
-<li><strong>Удалить резервирование</strong></li>
-</ol>
+<p>16 <strong>Удалить резервирование</strong></p>
 <pre><code>DELETE /hotel/reservations/{id}
 </code></pre>
-<ol>
-<li><strong>Получить информацию о клиентах, проживавших в те же дни, что и определённый клиент, в определённый период</strong></li>
-</ol>
+<p>17 <strong>Получить информацию о клиентах, проживавших в те же дни, что и определённый клиент, в определённый период</strong></p>
 <pre><code>GET /hotel/reservations/client_period
 </code></pre>
-<ol>
-<li><strong>Получить информацию о клиентах, проживавших в комнате в определённый период</strong></li>
-</ol>
+<p>18 <strong>Получить информацию о клиентах, проживавших в комнате в определённый период</strong></p>
 <pre><code>GET /hotel/reservations/room_period
 </code></pre>
 <h4 id="rooms">Rooms</h4>
-<ol>
-<li><strong>Получить список комнат</strong></li>
-</ol>
+<p>19 <strong>Получить список комнат</strong></p>
 <pre><code>GET /hotel/rooms
 </code></pre>
-<ol>
-<li><strong>Получить количество свободных комнат</strong></li>
-</ol>
+<p>20 <strong>Получить количество свободных комнат</strong></p>
 <pre><code>GET /hotel/rooms/free
 </code></pre>
-<ol>
-<li><strong>Получить информацию о комнате</strong></li>
-</ol>
+<p>21 <strong>Получить информацию о комнате</strong></p>
 <pre><code>GET /hotel/rooms/{id}
 </code></pre>
 <h3 id="auth">Auth</h3>
-<ol>
-<li><strong>Получить токен юзера по паролю и никнейму</strong></li>
-</ol>
+<p>22 <strong>Получить токен юзера по паролю и никнейму</strong></p>
 <pre><code>POST /auth/token/login
 </code></pre>
-<ol>
-<li><strong>Вывести информацию о пользователе</strong></li>
-</ol>
+<p>23 <strong>Вывести информацию о пользователе</strong></p>
 <pre><code>GET /auth/users/me
 </code></pre>
-<ol>
-<li><strong>Зарегистрировать пользователя</strong></li>
-</ol>
+<p>24 <strong>Зарегистрировать пользователя</strong></p>
 <pre><code>POST /auth/users
 </code></pre>
 
